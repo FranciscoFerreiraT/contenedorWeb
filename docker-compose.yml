@@ -1,0 +1,10 @@
+version: '2.2'
+services:
+  sir_web:
+    image: httpd
+    ports:
+      - 9000:80
+    volumes:
+      - ./paxinas:/usr/local/apache2/htdocs
+volumes:
+  paxinas:
